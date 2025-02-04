@@ -33,7 +33,7 @@ if(plan != null)
 					{
 						String requesterNetID = (String)requester.getAttribute(\"netid\");
 						accountRequest.add(new AttributeRequest(\"extensionAttribute1\", ProvisioningPlan.Operation.Set, requesterNetID));
-						log.debug(\"UIH AD Before Provisioning Rule : Added Requester Information\");
+						log.debug(\"UIH AD Before Provisioning Rule : Added Requester Information \");
 					}
 				}
 			}
