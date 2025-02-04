@@ -19,11 +19,13 @@ import sailpoint.rdk.utils.RuleXmlUtils;
 import sailpoint.tools.GeneralException;
 
 
+@SuppressWarnings("unused")
 public class JoinAttributesTest {
     Logger log = LogManager.getLogger(JoinAttributesTest.class);
 
     private static final String RULE_FILENAME = "src/main/resources/rules/Rule - BuildMap - JoinAttributes.xml";
 
+    @SuppressWarnings("unchecked")
     @Test
     public void testEnableUSer () throws GeneralException, EvalError {
         Interpreter i = new Interpreter();
@@ -45,6 +47,7 @@ public class JoinAttributesTest {
 
 
     }
+    @SuppressWarnings("unchecked")
     @Test
     public void testDisableUser () throws GeneralException, EvalError {
         Interpreter i = new Interpreter();
